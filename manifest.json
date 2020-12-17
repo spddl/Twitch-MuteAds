@@ -3,7 +3,7 @@
     "manifest_version": 2,
     "name": "Twitch MuteAds",
     "description": "Mute Ads on Twitch",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "icons": {
         "48": "volume_off_googred500_48x48.png",
         "128": "volume_off_googred500_108x108.png",
