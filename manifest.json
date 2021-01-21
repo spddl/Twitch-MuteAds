@@ -1,9 +1,9 @@
 {
     "update_url": "https://clients2.google.com/service/update2/crx",
-    "manifest_version": 2,
+    "manifest_version": 3,
     "name": "Twitch MuteAds",
     "description": "Mute Ads on Twitch",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "icons": {
         "48": "volume_off_googred500_48x48.png",
         "128": "volume_off_googred500_108x108.png",
@@ -19,16 +19,15 @@
         "run_at": "document_idle"
     }],
     "background": {
-        "scripts": [
-            "background.js"
-        ],
-        "persistent": true
+        "service_worker": "background.js"
     },
     "permissions": [
-        "*://*.twitch.tv/*",
         "tabs"
     ],
-    "browser_action": {
+    "host_permissions": [
+        "*://*.twitch.tv/*"
+    ],
+    "action": {
         "default_title": "Twitch MuteAds",
         "default_icon": {
             "48": "volume_off_googred500_48x48.png",
